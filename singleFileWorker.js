@@ -4,7 +4,7 @@ if (isMainThread) {
   // This code is executed in the main thread and not in the worker.
   
   // Create the worker.
-  const worker = new Worker(__filename, { workerData: { info : 'TSE'}});
+  const worker = new Worker(__filename, { workerData: { info : 'Télécom St-Etienne'}});
   
   // Listen for messages from the worker and print them.
   worker.on('message', (msg) => { console.log(msg); });

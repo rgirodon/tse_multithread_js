@@ -13,11 +13,11 @@ function useWorker(filepath) {
 
     worker.on('online', 
                 () => { 
-                    console.log('Launching intensive CPU task') ;
+                    console.log('Launching intensive CPU task');
                 });
 
     worker.on('message', 
-                messageFromWorker => {                            
+                (messageFromWorker) => {                            
                     console.log(messageFromWorker);
                 });
 }

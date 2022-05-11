@@ -17,13 +17,6 @@ function intensiveCpuTaskIo () {
 
 async function realAsyncFunction(param) {
 
-  let result = await realAsyncFunctionHelper(param);
-
-  return result;
-}
-
-async function realAsyncFunctionHelper(param) {
-
   return new Promise(
     (resolve) => {
       setTimeout(
